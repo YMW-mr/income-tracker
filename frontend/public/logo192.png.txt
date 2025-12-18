@@ -1,0 +1,3 @@
+# Placeholder for logo192.png
+# Replace this with your actual 192x192 icon
+# For now, you can use any PNG image or generate one at https://realfavicongenerator.net/
