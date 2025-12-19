@@ -1,17 +1,4 @@
-**Found the issue!** The service worker file is causing the build to fail. Let me fix it:
-Action: file_editor str_replace /app/frontend/src/service-worker.js --old-str "/* eslint-disable no-restricted-globals */
-
-// This service worker can be customized!
-// See https://developers.google.com/web/tools/workbox/modules
-// for the list of available Workbox modules, or add any other
-// code you'd like.
-
-const CACHE_NAME = 'income-tracker-v1';
-const urlsToCache = [
-  '/',
-  '/static/css/main.css',
-  '/static/js/main.js',
-];
+js
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
@@ -90,4 +77,3 @@ self.addEventListener('activate', (event) => {
     })
   );
 });"
-Observation: Edit was successful.
